@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Карточка товара Таблица товаров</title>
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal__window">
+        <button class="modal__close"></button>
+        <div class="modal__container">
+          <div class="top">
+            <h2 class="top__title">изменить товар</h2>
+            <button class="top__btn">ID: 201910241</button>
+          </div>
+          <form class="corpus">
+            <div class="corpus__grid">
+              <label for="name" class="edit edit--name">
+                <span class="edit__title">наименование</span>
+                <input type="text" name="name" id="name" class="edit__input" />
+              </label>
+              <label for="category" class="edit edit--category">
+                <span class="edit__title">категория</span>
+                <input
+                  type="text"
+                  name="category"
+                  id="category"
+                  class="edit__input"
+                />
+              </label>
+              <label for="unit" class="edit edit--unit">
+                <span class="edit__title">единицы измерения</span>
+                <input type="text" name="unit" id="unit" class="edit__input" />
+              </label>
+              <label for="sum" class="edit edit--sum">
+                <span class="edit__title">количество</span>
+                <input type="number" name="sum" id="sum" class="edit__input" />
+              </label>
+              <label for="price" class="edit edit--price">
+                <span class="edit__title">цена</span>
+                <input
+                  type="number"
+                  name="price"
+                  id="price"
+                  class="edit__input"
+                />
+              </label>
+              <label for="description" class="edit edit--description">
+                <span class="edit__title">описание</span>
+                <textarea
+                  name="description"
+                  id="description"
+                  class="edit__textarea"
+                ></textarea>
+              </label>
+              <label for="discount" ></label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal -->
+  </body>
+</html>
