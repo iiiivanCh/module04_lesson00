@@ -15,7 +15,7 @@
           <h2 class="top__title">изменить товар</h2>
           <button class="top__btn">ID: 201910241</button>
         </div>
-        <form class="corpus corpus--decor">
+        <form id="product" class="corpus corpus--decor">
           <div class="corpus__grid">
             <label for="name" class="edit edit--name">
               <span class="edit__title">наименование</span>
@@ -70,14 +70,20 @@
                   type="text"
                   name="discount-name"
                   id="discount-name"
-                  class="edit__input edit__input--discount"
+                  class="edit__input-discount"
                 />
              </div>
             </div>
+            <button class="button-corpus">добавить изображение</button>
           </div>
-          <!-- /.corpus -->
         </form>
+        <!-- /.corpus -->
+        <div class="modal__add">
+          <p class="modal__total">Итоговая стоимость:<span class="modal__total-number"> $ 900.00</span></p>
+          <button type="submit" form="data" class="modal__total-button">добавить товар</button>
+        </div>
       </div>
+      <!-- /.modal__window -->
     </div>
     <!-- /.modal -->
   </body>

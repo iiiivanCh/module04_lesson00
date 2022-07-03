@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  /* z-index: 99; */
+  z-index: 99;
   padding: 30px 0;
   background-color: rgba(229, 229, 229, 0.4);
 }
@@ -17,8 +17,7 @@
 .modal__window {
   position: relative;
   padding: 32px 106px 39px 106px;
-  width: 792px;
-  min-height: 613px;
+  max-width: 792px;
   background-color: var(--color-background-2);
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
 }
@@ -36,9 +35,6 @@
   background-color: inherit;
   border: none;
 }
-
-/* .modal__container {
-} */
 
 .top {
   margin-bottom: 21px;
@@ -74,6 +70,7 @@
 }
 
 .corpus--decor {
+  margin-bottom: 28px;
   padding: 28px;
   background-color: var(--color-background-1);
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
@@ -82,9 +79,8 @@
 
 .corpus__grid {
   display: grid;
-  /* height: 403px; */
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  /* grid-template-rows: repeat(5, 60px); */
   gap: 12px 24px;
 }
 
@@ -149,10 +145,6 @@
   resize: none;
 }
 
-/* .edit__couple {
-  position: relative;
-} */
-
 .edit__checkbox {
   position: absolute;
   -webkit-appearance: none;
@@ -169,7 +161,75 @@
   background-color: var(--color-background-3);
 }
 
-.edit__input--discount {
+.edit__checkbox::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/mark.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  opacity: 0;
+}
+
+.edit__checkbox:checked::after {
+  opacity: 1;
+}
+
+.edit__input-discount {
   margin-left: 50px;
+  padding: 0 5px;
   width: 80%;
+  min-height: 40px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--color-background-3);
+}
+
+.button-corpus {
+  margin-top: 21px;
+  padding: 11px 28px;
+  grid-row: 5 / 6;
+  grid-column: 2 / 3;
+  /* align-self: end; */
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: var(--color-background-1);
+  background: var(--color-button);
+  border: none;
+  border-radius: 6px;
+}
+
+.modal__add {
+  padding: 0 28px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal__total {
+  padding-top: 1px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--color-text-2);
+}
+
+.modal__total-number {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.modal__total-button {
+  padding: 10px 25px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: var(--color-background-1);
+  background: var(--color-button);
+  border: none;
+  border-radius: 6px;
 }
