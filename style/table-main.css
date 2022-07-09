@@ -1,8 +1,11 @@
+.table-main {
+  overflow-x: auto;
+}
+
 .table {
   min-width: 1100px;
   border-top: 1px solid var(--color-line);
   border-collapse: collapse;
-  overflow-x: auto;
 }
 
 .table__thead-tr {

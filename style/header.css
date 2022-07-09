@@ -32,3 +32,11 @@
   line-height: 22px;
   color: var(--color-button);
 }
+
+@media (max-width: 575px) {
+  .header {
+    padding-top: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
