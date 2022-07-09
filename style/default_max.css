@@ -15,8 +15,9 @@ body {
   font-family: Inter, sans-serif;
   font-size: 14px;
   font-weight: 500;
+  line-height: 17px;
   color: var(--color-text-1);
-  background-color: var(--color-background-1);
+  background-color: var(--color-background-2);
 }
 
 img {
@@ -88,12 +89,12 @@ iframe {
 */
 
 .container {
-  max-width: 1360px;
+  max-width: 1160px;
   padding: 0 30px;
   margin: 0 auto;
 }
 
-@media (max-width: 1250px) {
+/* @media (max-width: 1250px) {
   .container {
     max-width: 964px;
   }
@@ -117,4 +118,4 @@ iframe {
     width: 320px;
     padding: 0 20px;
   }
-}
+} */
