@@ -66,3 +66,27 @@
   border: none;
   border-radius: 6px;
 }
+
+@media (max-width: 991px) {
+  .table-top__control {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button-filter {
+    margin-bottom: 10px;
+    width: 110px;
+    justify-content: flex-start;
+  }
+
+  .table-top__search {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 42px;
+  }
+
+  .table-top__modal {
+    margin-left: 0;
+    width: 180px;
+  }
+}

@@ -24,6 +24,11 @@
   cursor: pointer;
 }
 
+.table-end__wrap {
+  display: flex;
+  align-items: center;
+}
+
 .table-end__of {
   margin-right: 50px;
 }
@@ -42,4 +47,18 @@
   height: 10px;
   background-image: url(../img/right.svg);
   border: none;
+}
+
+@media (max-width: 575px) {
+  .table-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 15px;
+  }
+
+  .table-end__show {
+    margin-right: 13px;
+  }
 }
